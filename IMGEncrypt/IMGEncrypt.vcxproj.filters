@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="FileDlg">
+      <UniqueIdentifier>{accdd2d9-3623-4d6c-aeef-20c49b33cebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ps2classic">
+      <UniqueIdentifier>{85d90acb-1a5f-47a5-97e1-324a1415ad4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{ff0d7ac8-f7e0-4464-8d70-3e74cb311ae1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ps2classic\aes.c">
+      <Filter>ps2classic</Filter>
+    </ClCompile>
+    <ClCompile Include="ps2classic\iso.c">
+      <Filter>ps2classic</Filter>
+    </ClCompile>
+    <ClCompile Include="ps2classic\mingw_mmap.c">
+      <Filter>ps2classic</Filter>
+    </ClCompile>
+    <ClCompile Include="ps2classic\sha1.c">
+      <Filter>ps2classic</Filter>
+    </ClCompile>
+    <ClCompile Include="ps2classic\tools.c">
+      <Filter>ps2classic</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDlg\FileDlg.cpp">
+      <Filter>FileDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ps2classic\ps2classic.c">
+      <Filter>ps2classic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps2classic\aes.h">
+      <Filter>ps2classic</Filter>
+    </ClInclude>
+    <ClInclude Include="ps2classic\iso.h">
+      <Filter>ps2classic</Filter>
+    </ClInclude>
+    <ClInclude Include="ps2classic\mingw_mmap.h">
+      <Filter>ps2classic</Filter>
+    </ClInclude>
+    <ClInclude Include="ps2classic\sha1.h">
+      <Filter>ps2classic</Filter>
+    </ClInclude>
+    <ClInclude Include="ps2classic\tools.h">
+      <Filter>ps2classic</Filter>
+    </ClInclude>
+    <ClInclude Include="ps2classic\types.h">
+      <Filter>ps2classic</Filter>
+    </ClInclude>
+    <ClInclude Include="ps2classic\ps2classic.h">
+      <Filter>ps2classic</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDlg\FileDlg.h">
+      <Filter>FileDlg</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IMGEncrypt.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ps2img.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
