@@ -19,4 +19,4 @@ Supported files: **.ISO, .BIN and .BIN.ENC**
 ![IMG Encrypt](https://i.imgur.com/HCbuFfe.png)
 
 ## License
-The files (WinMain.h, bWinMain.cpp, Utils.h, Utils.cpp) are on the GNU v3 license
+The files (WinMain.h, WinMain.cpp, Utils.h, Utils.cpp) are on the GNU v3 license
