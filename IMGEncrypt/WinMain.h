@@ -17,6 +17,7 @@
 
 extern "C" {
 #include "ps2classic/ps2classic.h"
+#include "ps2classic/iso.h"
 }
 
 /// Libs calls

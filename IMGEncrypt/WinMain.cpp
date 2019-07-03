@@ -70,20 +70,30 @@ void encrypt_thread(LPVOID lpParameter)
 	/// time start
 	prg_begin = clock();
 
+	std::string out_bin_enc = "ISO.BIN.ENC";
+
 	/// start encrypt images
 	for (size_t i = 0; i < paramrs->images_array.size(); i++)
 	{
 		current_image = i + 1;
+
+		/// LIMG
+		prepare_iso((char*)paramrs->images_array.at(i).data());
 
 		/// call ps2 encrypt function
 		ps2_encrypt_image
 		(
 			paramrs->mode, 
 			(char*)paramrs->images_array.at(i).data(), 
-			(char*)paramrs->out_images_array.at(i).data(), 
-			(char*)paramrs->out_images_array.at(i).data(),
+			(char*)out_bin_enc.data(), //(char*)paramrs->out_images_array.at(i).data(), 
+			(char*)out_bin_enc.data(), //(char*)paramrs->out_images_array.at(i).data(),
 			(char*)paramrs->content_id.data()
 		);
+
+		Sleep(100);
+
+		if (rename(out_bin_enc.data(), paramrs->out_images_array.at(i).data()) != 0)
+			MessageBox(hDlg, Utils->text_format("Failed to rename \"%s\" file, rename manually before continuing", out_bin_enc.data()), "Rename ERROR", MB_ICONERROR);
 	}
 	
 	/// time end
